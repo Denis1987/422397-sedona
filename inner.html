@@ -19,7 +19,9 @@
                 <li><a href="#">гостиницы</a></li>
             </ul>
         </nav>
-        <img src="http://placehold.it/150x100" alt="#">
+        <a href="#">
+            <img src="http://placehold.it/150x100" alt="#">
+        </a>
     </header>
 
     <!-- основное -->
@@ -32,47 +34,57 @@
 
             <div class="form">
 
-                <p>инфраструктура:</p>
+
+
 
                 <form action="#" method="post">
 
                     <fieldset>
 
-                        <input type="checkbox" name="pool" id="infrastructure1">
+                        <legend>инфраструктура:</legend>
+
+                        <input type="checkbox" name="pool" id="pool">
                         <label for="infrastructure1">бассейн</label>
 
-                        <input type="checkbox" name="parking" id="infrastructure2">
+                        <input type="checkbox" name="parking" id="parking">
                         <label for="infrastructure2">парковка</label>
 
-                        <input type="checkbox" name="wi-fi" id="infrastructure3">
+                        <input type="checkbox" name="wi-fi" id="wi-fi">
                         <label for="infrastructure3">wi-fi</label>
 
                     </fieldset>
 
-                    <p>тип жилья:</p>
+
                     <fieldset>
+
+                        <legend>тип жилья:</legend>
 
                         <input type="checkbox" name="type" id="type1">
                         <label for="type1">гостиница</label>
 
                         <input type="checkbox" name="type" id="type2">
-                        <label for="type2">матель</label>
+                        <label for="type2">мотель</label>
 
                         <input type="checkbox" name="type" id="type3">
                         <label for="type3">апартаменты</label>
 
                     </fieldset>
 
-                    <p>стоимость в сутки (р):</p>
 
                     <fieldset>
 
-                        <label for="price">от 0 до 3000</label>
+                        <legend>стоимость в сутки (р):</legend>
+
+                        <label for="price">от 
+                            <input type="number" min="0" value="0" /> до 
+                            <input type="number" max="3000" value="3000" />
+                        </label>
+
                         <input type="range" id="price" name="price" min="0" max="3000" step="1">
 
-                        <input type="submit" value="показать">
-
                     </fieldset>
+
+                    <input type="submit" value="показать">
 
                 </form>
             </div>
@@ -83,6 +95,8 @@
         <section class="result">
 
             <h2>найдено</h2>
+            
+            <div class="together">
 
             <div class="sorting">
 
@@ -95,7 +109,10 @@
             </div>
 
             <div class="choice">
-                <!-- не понятно как именно сделать эти кнопки переключатели -->
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+                
             </div>
 
         </section>
