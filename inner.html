@@ -18,8 +18,8 @@
                 <li><a href="#">карта штата</a></li>
                 <li><a href="#">гостиницы</a></li>
             </ul>
-            <img src="http://placehold.it/150x100" alt="#">
         </nav>
+        <img src="http://placehold.it/150x100" alt="#">
     </header>
 
     <!-- основное -->
@@ -30,63 +30,52 @@
 
         <section class="important">
 
-            <div class="form-left">
+            <div class="form">
 
                 <p>инфраструктура:</p>
 
                 <form action="#" method="post">
 
-                    <input type="checkbox" name="pool" id="infrastructure1">
-                    <label for="infrastructure1">бассейн</label>
+                    <fieldset>
 
-                    <input type="checkbox" name="parking" id="infrastructure2">
-                    <label for="infrastructure2">парковка</label>
+                        <input type="checkbox" name="pool" id="infrastructure1">
+                        <label for="infrastructure1">бассейн</label>
 
-                    <input type="checkbox" name="wi-fi" id="infrastructure3">
-                    <label for="infrastructure3">wi-fi</label>
+                        <input type="checkbox" name="parking" id="infrastructure2">
+                        <label for="infrastructure2">парковка</label>
 
+                        <input type="checkbox" name="wi-fi" id="infrastructure3">
+                        <label for="infrastructure3">wi-fi</label>
+
+                    </fieldset>
+
+                    <p>тип жилья:</p>
+                    <fieldset>
+
+                        <input type="checkbox" name="type" id="type1">
+                        <label for="type1">гостиница</label>
+
+                        <input type="checkbox" name="type" id="type2">
+                        <label for="type2">матель</label>
+
+                        <input type="checkbox" name="type" id="type3">
+                        <label for="type3">апартаменты</label>
+
+                    </fieldset>
+
+                    <p>стоимость в сутки (р):</p>
+
+                    <fieldset>
+
+                        <label for="price">от 0 до 3000</label>
+                        <input type="range" id="price" name="price" min="0" max="3000" step="1">
+
+                        <input type="submit" value="показать">
+
+                    </fieldset>
 
                 </form>
             </div>
-
-            <div class="form-middle">
-
-                <p>тип жилья:</p>
-
-                <form action="#" method="post">
-
-                    <input type="checkbox" name="type" id="type1">
-                    <label for="type1">гостиница</label>
-
-                    <input type="checkbox" name="type" id="type2">
-                    <label for="type2">матель</label>
-
-                    <input type="checkbox" name="type" id="type3">
-                    <label for="type3">апартаменты</label>
-
-
-                </form>
-            </div>
-
-            <div class="form-right">
-
-                <p>стоимость с сутки (р):</p>
-
-                <form action="#" method="post">
-
-                    <label for="price">от 0 до 3000</label>
-                    <input type="range" id="price" name="price" min="0" max="3000" step="1">
-
-                    <input type="submit" value="показать">
-
-                </form>
-
-
-
-            </div>
-
-
-
         </section>
 
         <!-- результат -->
@@ -94,15 +83,16 @@
         <section class="result">
 
             <h2>найдено</h2>
-            
-            <p>сортировка:</p>
 
-            <ul>
+            <div class="sorting">
 
-                <li><a href="#">по цене</a></li>
-                <li><a href="#">по типу</a></li>
-                <li><a href="#">по рейтингу</a></li>
-            </ul>
+                <span>сортировка:</span>
+
+                <a href="#">по цене</a>
+                <a href="#">по типу</a>
+                <a href="#">по рейтингу</a>
+
+            </div>
 
             <div class="choice">
                 <!-- не понятно как именно сделать эти кнопки переключатели -->
@@ -117,73 +107,67 @@
             <div class="suggestion">
 
                 <img src="http://placehold.it/150x100" alt="#">
-                <h2>amara resort & spa</h2>
-                <p>гостиница от 3500 Р.</p>
-                <a class="detailed" href="#">подробнее</a>
-                <a class="book" href="#">забронировать</a>
 
-
-                <div class="assessment">
-                    <div class="stars"></div>
-                    <div class="stars"></div>
-                    <div class="stars"></div>
-                    <div class="stars"></div>
-                    <div class="stars"></div>
+                <div class="descriptive">
+                    <h2>amara resort &#38; spa</h2>
+                    <p>гостиница</p>
+                    <p>от 3500 Р.</p>
+                    <a class="detailed" href="#">подробнее</a>
+                    <a class="book" href="#">забронировать</a>
                 </div>
 
-                <span class="rating">рейтинг:8,5</span>
-            </div>
-            <div class="suggestion">
-
-                <img src="http://placehold.it/150x100" alt="#">
-                <h2>desert quail inn</h2>
-                <p>мотель от 2000 Р.</p>
-                <a class="detailed" href="#">подробнее</a>
-                <a class="book" href="#">забронировать</a>
-
-
-                <div class="assessment">
+                <div class="rating">
                     <div class="stars"></div>
-                    <div class="stars"></div>
-                    <div class="stars"></div>
-                    <div class="stars"></div>
-                    <div class="stars"></div>
+                    <span>рейтинг:8,5</span>
                 </div>
-
-                <span class="rating">рейтинг:8,9</span>
             </div>
 
             <div class="suggestion">
 
                 <img src="http://placehold.it/150x100" alt="#">
-                <h2>villas at poco diablo</h2>
-                <p>апартаменты от 4000 Р.</p>
-                <a class="detailed" href="#">подробнее</a>
-                <a class="book" href="#">забронировать</a>
 
-
-                <div class="assessment">
-                    <div class="stars"></div>
-                    <div class="stars"></div>
-                    <div class="stars"></div>
-                    <div class="stars"></div>
-                    <div class="stars"></div>
+                <div class="descriptive">
+                    <h2>desert quail inn</h2>
+                    <p>мотель</p>
+                    <p>от 2000 Р.</p>
+                    <a class="detailed" href="#">подробнее</a>
+                    <a class="book" href="#">забронировать</a>
                 </div>
 
-                <span class="rating">рейтинг:9,2</span>
+
+                <div class="rating">
+                    <div class="stars"></div>
+                    <span class="rating">рейтинг:8,9</span>
+                </div>
+            </div>
+
+            <div class="suggestion">
+
+                <img src="http://placehold.it/150x100" alt="#">
+
+                <div class="descriptive">
+                    <h2>villas at poco diablo</h2>
+                    <p>апартаменты</p>
+                    <p>от 4000 Р.</p>
+                    <a class="detailed" href="#">подробнее</a>
+                    <a class="book" href="#">забронировать</a>
+                </div>
+
+
+                <div class="rating">
+                    <div class="stars"></div>
+                    <span class="rating">рейтинг:9,2</span>
+                </div>
             </div>
 
         </section>
-
-
-
-
 
     </main>
 
     <footer>
 
         <div class="bottom-visit">#visitsedona</div>
+
 
         <div class="bottom-social">
             <a href="" class=""></a>
@@ -196,9 +180,6 @@
         </div>
 
     </footer>
-
-
-
 
 </body>
 
