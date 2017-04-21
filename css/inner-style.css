@@ -16,29 +16,3 @@ body {
 .subtitle {
     font-size: 21px;
 }
-
-h2 {
-    font-size: 21px;
-}
-
-nav {
-    width: 100%;
-    height: auto;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-ul li {
-    display: inline-block;
-    width: 24.6%;
-    text-align: center;
-}
-
-ul li a {
-    padding: 10px;
-    text-decoration: none;
-}
