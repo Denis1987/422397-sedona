@@ -4,6 +4,9 @@ body {
     line-height: 18px;
     color: #000000;
     font-weight: 100;
+}
+
+.everything {
     width: 768px;
     height: auto;
     margin-bottom: 0;
@@ -21,24 +24,24 @@ h2 {
     font-size: 21px;
 }
 
-nav {
+.top-menu {
     width: 100%;
     height: auto;
 }
 
-ul {
+.top-menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-ul li {
+.top-menu ul li {
     display: inline-block;
     width: 24.6%;
     text-align: center;
 }
 
-ul li a {
+.top-menu ul li a {
     padding: 10px;
     text-decoration: none;
 }
