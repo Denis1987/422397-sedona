@@ -13,6 +13,7 @@ body {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+   /** background-image: url(../img/sedona-index-768.jpg);**/
 }
 
 .headline,
@@ -27,9 +28,16 @@ h2 {
 
 .top-menu {
     width: 100%;
-    height: 56px;
-    outline: 1px solid;
-    background-color: #CEE9F8;
+        outline: 1px solid;
+    
+}
+img {
+    display: block;
+}
+.center img {
+    position: relative;
+    left: 35px;
+    top: -29px;
 }
 
 .top-menu ul {
@@ -37,7 +45,7 @@ h2 {
     padding: 0;
     list-style: none;
     outline: 1px solid;
-    background-color: #CEE9F8;
+    
 }
 
 .top-menu li {
@@ -47,8 +55,7 @@ h2 {
     text-align: center;
     white-space: nowrap;
     outline: 1px solid;
-    background-color: #CEE9F8;
-    padding-top: 15px;
+       padding-top: 15px;
 }
 
 .top-menu .center {
@@ -57,21 +64,17 @@ h2 {
     height: 0;
     white-space: nowrap;
     outline: 1px solid;
-    background-color: #CEE9F8;
-}
+   }
 
 .top-menu a {
     text-decoration: none;
     vertical-align: middle;
     outline: 1px solid;
-    background-color: #CEE9F8;
-}
+   }
 
 .intro {
     outline: 1px solid;
-    background-color: #CEE9F8;
-    height: 350px;
-    padding-top: 76px;
+          padding-top: 76px;
     padding-right: 155px;
     padding-left: 155px;
     padding-bottom: 84px;
@@ -80,45 +83,48 @@ h2 {
 
 .info {
     outline: 1px solid;
-    background-color: #CEE9F8;
-    display: block;
+      display: block;
     width: 100%;
-    padding-top: 55px;
+    padding-top: 30px;
     clear: both;
-    height: 210px;
-}
+    }
 
 .info .headline {
     padding-left: auto;
     padding-right: auto;
-    width: 390px;
+    width: 600px;
     outline: 1px solid;
-    background-color: #CEE9F8;
-    text-align: center;
+      text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-size: 25px;
+    color: red;
+    margin-bottom: 30px;
 }
 
 .info p {
-    background-color: #81B3D2;
-    outline: 1px solid;
+       outline: 1px solid;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 65px;
+    margin-bottom: 58px;
     text-align: center;
+    font-size: 17px;
 }
 
-.townlet .clearfix {
+.townlet  {
     display: block;
-    background-color: #81B3D2;
-    outline: 1px solid;
+     outline: 1px solid;
     width: auto;
     box-sizing: content-box;
-    clear: both;
+    
 }
 
 .townlet_foto {
     float: right;
+    width: 513px;
+    height: 257px;
+    background-image: url(../img/hotel.jpg);
+   
 }
 
 .townlet p {
@@ -133,128 +139,97 @@ h2 {
     text-align: center;
 }
 
-.info-left {
-    background-color: #CEE9F8;
-    outline: 1px solid;
+.info-side {
+     outline: 1px solid;
     width: 255px;
-    height: 255px;
-    display: block;
+     display: block;
     float: left;
+    padding-top: 48px;
+    padding-bottom: 47px;
+    box-sizing: content-box;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 .available {
     background-color: red;
     outline: 1px solid;
     clear: both;
-    height: 274px;
-    padding-top: 56px;
+           display: block;
 }
 
 .available .options {
-    background-color: #81B3D2;
     outline: 1px solid;
     width: 33.33%;
     height: 218px;
     float: left;
-}
-
-.bridge .clearfix {
-    display: block;
-    background-color: #81B3D2;
-    outline: 1px solid;
-    width: auto;
-    height: auto;
-    box-sizing: content-box;
-    clear: both;
-}
-
-.bridge_foto {
-    float: left;
-}
-
-.bridge p {
-    text-align: center;
-}
-
-.bridge h2 {
-    text-align: center;
-}
-
-.bridge span {
-    text-align: center;
-}
-
-.info-right {
-    background-color: #CEE9F8;
-    outline: 1px solid;
-    width: 255px;
-    height: 255px;
-    display: block;
-    float: right;
+    margin-top: 52px;
+    margin-bottom: 56px;
 }
 
 .search {
-    background-color: #CEE9F8;
-    outline: 1px solid;
+       outline: 1px solid;
     width: 570px;
-    height: 482px;
     margin-left: auto;
     margin-right: auto;
+    display: none;
 }
 
 .search a {
-    background-color: #CEE9F8;
     outline: 1px solid;
     width: 570px;
-    height: 50px;
-    display: block;
+       display: block;
     text-align: center;
     text-decoration: none;
     padding-top: 35px;
 }
 
 footer {
-    background-color: #CEE9F8;
     outline: 1px solid;
     width: 100%;
-    height: 120px;
-    clear: both;
+      clear: both;
+    display: block;
 }
 
 .bottom {
-    background-color: #CEE9F8;
-    outline: 1px solid;
+      outline: 1px solid;
     width: 256px;
-    height: 120px;
-    float: left;
+     float: left;
     display: block;
+}
+.bottom a {
+       outline: 1px solid;
 }
 
-.info-map {
-    height: 770px;
-}
 .important {
-    background-color: #CEE9F8;
-    outline: 1px solid;
+       outline: 1px solid;
     width: 100%;
-    height: 217px;
-}
+   }
 .result {
-    background-color: #CEE9F8;
-    outline: 1px solid;
+       outline: 1px solid;
     width: 100%;
-    height: 85px;
-}
+  }
 .options {
-    background-color: #CEE9F8;
-    outline: 1px solid;
+       outline: 1px solid;
     width: 100%;
-    height: 450px;
 }
 .suggestion {
-    background-color: #CEE9F8;
-    outline: 1px solid;
+        outline: 1px solid;
     width: 100%;
-    height: 150px;
     display: block;
+}
+.right-side {
+    float: right;
+    box-sizing: content-box;
+    
+}
+
+.bridge_foto {
+    float: left;
+    background-image: url(../img/bridge.jpg);
+   width: 513px;
+    height: 257px;
 }

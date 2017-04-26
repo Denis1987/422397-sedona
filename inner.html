@@ -19,12 +19,11 @@
                     <li><a href="#">информация</a></li>
                     <li><a href="#">фото и видео</a></li>
                     <li class="center">
-                        <a href="#"></a>
+                        <a href="#"><img src="img/logo.png" alt="logo"></a>
                     </li>
                     <li><a href="#">карта штата</a></li>
                     <li><a href="inner.html">гостиницы</a></li>
                 </ul>
-                <img src="img/logo.png" alt="logo">
             </nav>
         </header>
         <!-- основное -->
@@ -74,20 +73,22 @@
                         </fieldset>
 
 
-                        <fieldset>
+                        <div class="fieldset">
+                            <fieldset>
 
-                            <legend>стоимость в сутки (р):</legend>
+                                <legend>стоимость в сутки (р):</legend>
 
-                            <label for="price">от 
-                            <input type="number" min="0" value="0" /> до 
-                            <input type="number" max="3000" value="3000" />
-                        </label>
+                                <label for="min-price">от </label>
+                                <input id="min-price" type="number" min="0" value="0" />
+                                <label for="max-price">до</label> 
+                                <input id="max-price" type="number" max="3000" value="3000" />
 
-                            <input type="range" id="price" name="price" min="0" max="3000" step="1">
 
-                        </fieldset>
+                                <input type="range" id="price" name="price" min="0" max="3000" step="1">
 
-                        <input type="submit" value="показать">
+                            </fieldset>
+                            <input type="submit" value="показать">
+                        </div>
 
                     </form>
                 </div>
