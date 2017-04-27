@@ -13,7 +13,7 @@ body {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-   /** background-image: url(../img/sedona-index-768.jpg);**/
+    /** background-image: url(../img/sedona-index-768.jpg);**/
 }
 
 .headline,
@@ -28,12 +28,13 @@ h2 {
 
 .top-menu {
     width: 100%;
-        outline: 1px solid;
-    
+    outline: 1px solid;
 }
+
 img {
     display: block;
 }
+
 .center img {
     position: relative;
     left: 35px;
@@ -45,7 +46,7 @@ img {
     padding: 0;
     list-style: none;
     outline: 1px solid;
-    
+    font-size: 0;
 }
 
 .top-menu li {
@@ -55,26 +56,26 @@ img {
     text-align: center;
     white-space: nowrap;
     outline: 1px solid;
-       padding-top: 15px;
+    padding-top: 15px;
+    font-size: 14px;
 }
 
 .top-menu .center {
-    display: inline-block;
+    display: block;
     width: 140px;
     height: 0;
     white-space: nowrap;
     outline: 1px solid;
-   }
+}
 
 .top-menu a {
     text-decoration: none;
-    vertical-align: middle;
     outline: 1px solid;
-   }
+}
 
 .intro {
     outline: 1px solid;
-          padding-top: 76px;
+    padding-top: 76px;
     padding-right: 155px;
     padding-left: 155px;
     padding-bottom: 84px;
@@ -83,18 +84,18 @@ img {
 
 .info {
     outline: 1px solid;
-      display: block;
+    display: block;
     width: 100%;
     padding-top: 30px;
     clear: both;
-    }
+}
 
 .info .headline {
     padding-left: auto;
     padding-right: auto;
     width: 600px;
     outline: 1px solid;
-      text-align: center;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-size: 25px;
@@ -103,7 +104,7 @@ img {
 }
 
 .info p {
-       outline: 1px solid;
+    outline: 1px solid;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 58px;
@@ -111,12 +112,11 @@ img {
     font-size: 17px;
 }
 
-.townlet  {
+.townlet {
     display: block;
-     outline: 1px solid;
+    outline: 1px solid;
     width: auto;
     box-sizing: content-box;
-    
 }
 
 .townlet_foto {
@@ -124,7 +124,6 @@ img {
     width: 513px;
     height: 257px;
     background-image: url(../img/hotel.jpg);
-   
 }
 
 .townlet p {
@@ -140,14 +139,15 @@ img {
 }
 
 .info-side {
-     outline: 1px solid;
+    outline: 1px solid;
     width: 255px;
-     display: block;
+    display: block;
     float: left;
     padding-top: 48px;
     padding-bottom: 47px;
     box-sizing: content-box;
 }
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -158,7 +158,7 @@ img {
     background-color: red;
     outline: 1px solid;
     clear: both;
-           display: block;
+    display: block;
 }
 
 .available .options {
@@ -171,17 +171,20 @@ img {
 }
 
 .search {
-       outline: 1px solid;
+    outline: 1px solid;
     width: 570px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.search-form {
     display: none;
 }
 
 .search a {
     outline: 1px solid;
     width: 570px;
-       display: block;
+    display: block;
     text-align: center;
     text-decoration: none;
     padding-top: 35px;
@@ -190,46 +193,85 @@ img {
 footer {
     outline: 1px solid;
     width: 100%;
-      clear: both;
     display: block;
 }
 
 .bottom {
-      outline: 1px solid;
+    outline: 1px solid;
     width: 256px;
-     float: left;
+    float: left;
     display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
 .bottom a {
-       outline: 1px solid;
+    outline: 1px solid;
 }
 
 .important {
-       outline: 1px solid;
-    width: 100%;
-   }
-.result {
-       outline: 1px solid;
-    width: 100%;
-  }
-.options {
-       outline: 1px solid;
+    outline: 1px solid;
     width: 100%;
 }
+
+.result {
+    outline: 1px solid;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.options {
+    outline: 1px solid;
+    width: 100%;
+}
+
 .suggestion {
-        outline: 1px solid;
+    outline: 1px solid;
     width: 100%;
     display: block;
-}
-.right-side {
-    float: right;
-    box-sizing: content-box;
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .bridge_foto {
     float: left;
     background-image: url(../img/bridge.jpg);
-   width: 513px;
+    width: 513px;
     height: 257px;
+}
+
+.fieldset {
+    float: left;
+    width: 256px;
+}
+
+.suggestion-item {
+    float: left;
+    display: inline-block;
+    margin-left: 20px;
+}
+.suggestion img {
+    float: left; 
+    margin-left: 20px;
+}
+.rating {
+    border: 1px solid black;
+    padding: 5px;
+    float: right;
+    margin-top: 30px;
+}
+.paragraphs {
+    width: 140px;
+    display: inline-block;
+    font-size: 0;
+}
+.paragraphs p {
+    font-size: 14px; 
+    display: inline;
+}
+.details a {
+    border: 1px solid black;
+    padding: 5px;
+    text-decoration: none;
 }
