@@ -51,7 +51,7 @@ img {
 
 .top-menu li {
     display: inline-block;
-    width: 153px;
+    width: 20%;
     height: 41px;
     text-align: center;
     white-space: nowrap;
@@ -61,7 +61,7 @@ img {
 }
 
 .top-menu .center {
-    display: block;
+    display: inline-block;
     width: 140px;
     height: 0;
     white-space: nowrap;
@@ -244,6 +244,8 @@ footer {
 .fieldset {
     float: left;
     width: 256px;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .suggestion-item {
@@ -268,10 +270,13 @@ footer {
 }
 .paragraphs p {
     font-size: 14px; 
-    display: inline;
+    display: inline-block;
 }
 .details a {
     border: 1px solid black;
     padding: 5px;
     text-decoration: none;
+}
+label {
+    display: block;
 }
