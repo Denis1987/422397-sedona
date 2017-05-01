@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    </head>
+</head>
 
 <body>
 
@@ -21,7 +21,7 @@
                     <li><a href="#">информация</a></li>
                     <li><a href="#">фото и видео</a></li>
                     <li class="center">
-                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                        <a href="#"><img src="img/logo_border.png" alt="logo"></a>
                     </li>
                     <li><a href="#">карта штата</a></li>
                     <li><a href="inner.html">гостиницы</a></li>
@@ -46,10 +46,10 @@
                         <fieldset class="fieldset">
 
                             <legend>инфраструктура:</legend>
-
-                            <input type="checkbox" name="pool" id="pool">
-                            <label for="pool">бассейн</label>
-
+                            <div class="pool">
+                                <input type="checkbox" name="pool" id="pool">
+                                <label for="pool">бассейн</label>
+                            </div>
                             <input type="checkbox" name="parking" id="parking">
                             <label for="parking">парковка</label>
 
@@ -75,7 +75,7 @@
                         </fieldset>
 
 
-                       <div class="fieldset" >
+                        <div class="fieldset">
                             <fieldset>
 
                                 <legend>стоимость в сутки (р):</legend>
@@ -100,7 +100,7 @@
 
             <section class="result">
 
-                <h2 class="subtitle">найдено</h2>
+                <h2 class="subtitle">найдено: 3</h2>
 
                 <div class="together">
 
@@ -143,7 +143,7 @@
                         </div>
                     </div>
 
-                    <div class="rating">
+                    <div class="rating_stars">
                         <div class="stars"></div>
                         <span class="rating">рейтинг:8,5</span>
                     </div>
@@ -166,7 +166,7 @@
                     </div>
 
 
-                    <div class="rating">
+                    <div class="rating_stars">
                         <div class="stars"></div>
                         <span class="rating">рейтинг:8,9</span>
                     </div>
@@ -189,7 +189,7 @@
                     </div>
 
 
-                    <div class="rating">
+                    <div class="rating_stars">
                         <div class="stars"></div>
                         <span class="rating">рейтинг:9,2</span>
                     </div>
@@ -201,20 +201,24 @@
 
         <footer class="clearfix">
 
-            <div class="bottom">#visitsedona</div>
+            <div class="bottom"><div class="visit">#visitsedona</div></div>
 
             <div class="bottom">
-                <a href="" class="">aa</a>
-                <a href="" class="">bb</a>
-                <a href="" class="">cc</a>
+                <div class="bottom_sprite">
+                    <a href="" class="sprite twitter"></a>
+                    <a href="" class="sprite facebook"></a>
+                    <a href="" class="sprite youtube"></a>
+                </div>
             </div>
 
             <div class="bottom">
-                <a href="#">vebsite by <div class="academy"></div></a>
+                <a href="#">
+                    <div class="academy"></div>
+                </a>
             </div>
-
 
         </footer>
+
 
     </section>
 

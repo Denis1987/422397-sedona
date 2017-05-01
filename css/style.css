@@ -9,6 +9,10 @@ body {
     padding: 0;
     text-transform: uppercase;
 }
+html {
+    margin: 0;
+    padding: 0;
+}
 
 .everything {
     width: 768px;
@@ -29,6 +33,7 @@ body {
 h2 {
     font-size: 21px;
 }
+
 .main-header {
     width: 100%;
 }
@@ -36,8 +41,6 @@ h2 {
 .top-menu {
     width: 100%;
     outline: 1px solid;
-    padding-left: 6%;
-    padding-right: 6%;
 }
 
 img {
@@ -50,6 +53,8 @@ img {
     list-style: none;
     outline: 1px solid;
     font-size: 0;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .top-menu li {
@@ -61,7 +66,16 @@ img {
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: 14px;
+    font-weight: bold;
     vertical-align: top;
+}
+
+.top-menu li:last-child {
+    text-align: right;
+}
+
+.top-menu li:first-child {
+    text-align: left;
 }
 
 .top-menu .center {
@@ -70,7 +84,6 @@ img {
     outline: 1px solid;
     padding-top: 0;
     padding-bottom: 0;
-    width: 9%
 }
 
 .top-menu img {
@@ -83,7 +96,11 @@ img {
     text-align: center;
     outline: 1px solid;
     color: black;
-    width: 100%;
+}
+
+.top-menu .center a {
+    position: absolute;
+    left: 606px;
 }
 
 .intro {
@@ -99,13 +116,21 @@ img {
     outline: 1px solid;
 }
 
-.frame {
+/**.frame {
     display: inline-block;
     width: 768px;
     height: 40px;
     background-image: url(../img/frame.png);
     vertical-align: bottom;
     outline: 1px solid;
+    margin-top: 48px;**/
+}
+.intro::after {
+    background-image: url(../img/frame.png); 
+    display: inline-block;
+    width: 768px;
+    height: 40px;
+    vertical-align: bottom;
     margin-top: 48px;
 }
 
@@ -115,7 +140,6 @@ img {
     width: 100%;
     padding-top: 30px;
     clear: both;
-    
 }
 
 .info .headline {
@@ -174,7 +198,7 @@ img {
     display: block;
     float: left;
     padding-top: 19px;
-        box-sizing: content-box;
+    box-sizing: content-box;
     color: white;
 }
 
@@ -183,6 +207,7 @@ img {
     width: 100%;
     text-align: center;
 }
+
 .info-side p {
     padding-top: 14px;
 }
@@ -202,7 +227,7 @@ img {
 .available .options {
     outline: 1px solid;
     width: 33.33%;
-       float: left;
+    float: left;
 }
 
 .search {
@@ -280,6 +305,7 @@ footer {
     width: 100%;
     text-align: center;
 }
+
 .options::before {
     display: block;
     margin-left: auto;
@@ -309,7 +335,6 @@ footer {
     display: none;
 }
 
-
 .subtitle {
     display: block;
     width: 100%;
@@ -319,10 +344,12 @@ footer {
 
 .suggestion {
     outline: 1px solid;
-    width: 100%;
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+       display: block;
+    padding-left: 46px;
+    padding-right: 44px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 678px;
 }
 
 .bridge_foto {
@@ -343,35 +370,75 @@ footer {
 .suggestion-item {
     float: left;
     display: inline-block;
-    margin-left: 20px;
+    width: 400px;
+    outline: 1px solid;
 }
 
 .suggestion img {
     float: left;
-    margin-left: 20px;
+    margin-right: 30px;
+   
+}
+.descriptive h2 {
+    margin: 0;
+    width: 300px;
+    margin-bottom: 10px;
 }
 
 .rating {
-    border: 1px solid black;
-    padding: 5px;
+    
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    background-color: #F2F2F2;
+}
+.rating_stars {
     float: right;
-    margin-top: 30px;
+    outline: 1px solid;
+    width: 100px;
+    
+}
+.stars {
+    display: block;
+    width: 100%;
+    height: 20px;
+    outline: 1px solid;
+    background-image: url(../img/4stars.png);
+    background-repeat: no-repeat;
+   margin-bottom: 53px;
 }
 
+
 .paragraphs {
-    width: 140px;
-    display: inline-block;
-    font-size: 0;
+        display: inline-block;
+    font-size: 0;outline: 1px solid;
+    width: 400px;
+    
 }
 
 .paragraphs p {
+    width: 110px;
+    outline: 1px solid;
     font-size: 14px;
     display: inline-block;
+    margin: 0;
 }
+.paragraphs p:last-child {
+    padding-left: 7px;
+}
+
+.details {
+    padding-top: 12px;
+}
+
+
 
 .details a {
     border: 1px solid black;
-    padding: 5px;
+    padding-bottom: 4px;
+    padding-top: 4px;
     text-decoration: none;
 }
 
@@ -379,14 +446,17 @@ label {
     display: block;
 }
 
-
 .academy {
     display: block;
-    width: 113px;
+    width: 196px;
     height: 38px;
     outline: 1px solid;
     /** background-repeat: no-repeat;**/
     background-image: url(../img/logo_bottom.png);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .available_bottom {
@@ -422,4 +492,51 @@ label {
 .youtube {
     background-size: 40px;
     background-position: 3px -65px;
+}
+
+.fieldset {
+    margin-top: 30px;
+}
+
+.fieldset legend {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.fieldset .pool {
+    outline: 1px solid;
+}
+
+.detailed {
+    font-weight: bold;
+    color: white;
+    background-color: #81B3D2;
+    display: inline-block;
+    padding-left: 16px;
+    padding-right: 16px;
+    /*вот здесь и ниже сделал padding но не сработало*/
+}
+
+.book {
+    font-weight: bold;
+    color: white;
+    background-color: #766357;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.sorting a {
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+.visit {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    
 }
