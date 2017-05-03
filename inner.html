@@ -46,52 +46,55 @@
                         <fieldset class="fieldset">
 
                             <legend>инфраструктура:</legend>
-                            <div class="pool">
+                            <div class="input_label">
                                 <input type="checkbox" name="pool" id="pool">
                                 <label for="pool">бассейн</label>
                             </div>
-                            <input type="checkbox" name="parking" id="parking">
-                            <label for="parking">парковка</label>
-
-                            <input type="checkbox" name="wi-fi" id="wi-fi">
-                            <label for="infrastructure3">wi-fi</label>
-
+                            <div class="input_label">
+                                <input type="checkbox" name="parking" id="parking">
+                                <label for="parking">парковка</label>
+                            </div>
+                            <div class="input_label">
+                                <input type="checkbox" name="wi-fi" id="wi-fi">
+                                <label for="infrastructure3">wi-fi</label>
+                            </div>
                         </fieldset>
 
 
                         <fieldset class="fieldset">
 
                             <legend>тип жилья:</legend>
-
+                            <div class="input_label">
                             <input type="checkbox" name="type" id="type1">
                             <label for="type1">гостиница</label>
-
+                            </div>
+                            <div class="input_label">
                             <input type="checkbox" name="type" id="type2">
                             <label for="type2">мотель</label>
-
+                            </div>
+                            <div class="input_label">
                             <input type="checkbox" name="type" id="type3">
                             <label for="type3">апартаменты</label>
-
+                            </div>
                         </fieldset>
 
-
-                        <div class="fieldset">
-                            <fieldset>
-
-                                <legend>стоимость в сутки (р):</legend>
-
-                                <label for="min-price">от </label>
-                                <input id="min-price" type="number" min="0" value="0" />
-                                <label for="max-price">до</label>
-                                <input id="max-price" type="number" max="3000" value="3000" />
-
-
-                                <input type="range" id="price" name="price" min="0" max="3000" step="1">
-
-                            </fieldset>
-                            <input type="submit" value="показать">
+                        <div class="filter_range">
+                            <div class="filter_range_title">стоимость в сутки (р):</div>
+                            <div class="price_controls">
+                                <label class="min_price">от <input type="text" name="min_price" value="0"></label>
+                                <label class="max_price">до <input type="text" name="max_price" value="3000"></label>
+                            </div>
+                            <div class="range_controls">
+                                <div class="scale">
+                                <div class="bar"></div>
+                                </div>
+                                <div class="range_toggle range_toggle_min"></div>
+                                <div class="range_toggle range_toggle_max"></div>
+                            </div>
+                            <button class="btn_transparent" type="submit">
+                                показать
+                            </button>
                         </div>
-
                     </form>
                 </div>
             </section>
@@ -201,7 +204,9 @@
 
         <footer class="clearfix">
 
-            <div class="bottom"><div class="visit">#visitsedona</div></div>
+            <div class="bottom">
+                <div class="visit">#visitsedona</div>
+            </div>
 
             <div class="bottom">
                 <div class="bottom_sprite">

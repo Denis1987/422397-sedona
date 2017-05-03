@@ -85,6 +85,7 @@ img {
     outline: 1px solid;
     padding-top: 0;
     padding-bottom: 0;
+    position: relative;
 }
 
 .top-menu img {
@@ -101,13 +102,30 @@ img {
 
 .top-menu .center a {
     position: absolute;
-    left: 606px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 1;
 }
 
 .intro {
     outline: 1px solid;
-    padding-top: 76px;
+    padding-top: 77px;
     background-image: url(../img/background_photo.jpg);
+    height: 438px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.intro::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    left: 0;
+    background: url(../img/frame.png) no-repeat center;
+    height: 37px;
 }
 
 .welcome img {
@@ -129,25 +147,15 @@ img {
 
 
 }
-.intro::after {
-    content: "#";
-    background-image: url(../img/frame.png);
-    display: block;
-    width: 768px;
-    height: 40px;
-    vertical-align: bottom;
-    margin-top: 48px;
-}
 .info {
     outline: 1px solid;
     display: block;
-    width: 100%;
-    padding-top: 30px;
+    width: 100;
+    padding-top: 55px;
     clear: both;
+    padding-bottom: 55px;
 }
 .info .headline {
-    padding-bottom: 3px;
-    padding-top: 8px;
     width: 500px;
     outline: 1px solid;
     text-align: center;
@@ -156,6 +164,7 @@ img {
     color: black;
     margin-bottom: 30px;
     font-weight: bold;
+    margin-top: 0;
 }
 .info p {
     outline: 1px solid;
@@ -163,7 +172,8 @@ img {
     margin-right: auto;
     text-align: center;
     font-size: 14px;
-    padding-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .townlet {
     display: block;
@@ -184,6 +194,7 @@ img {
 }
 .townlet h2 {
     text-align: center;
+    line-height: 1;
 }
 .townlet span {
     text-align: center;
@@ -193,7 +204,6 @@ img {
     width: 255px;
     display: block;
     float: left;
-    padding-top: 19px;
     box-sizing: content-box;
     color: white;
 }
@@ -201,9 +211,12 @@ img {
     display: block;
     width: 100%;
     text-align: center;
+    margin-top: 25px;
 }
 .info-side p {
-    padding-top: 14px;
+    margin-top: 24px;
+    line-height: 21px;
+    margin-bottom: 0;
 }
 .clearfix::after {
     content: "";
@@ -227,15 +240,18 @@ img {
     margin-right: auto;
 }
 .search-form {
-    display: none;
+    /**display: none;**/
 }
 .search a {
     outline: 1px solid;
     width: 570px;
-    display: block;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     padding-top: 35px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
 }
 footer {
     outline: 1px solid;
@@ -255,7 +271,10 @@ footer {
 }
 .important {
     outline: 1px solid;
-    width: 100%;
+    width: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 35px;
 }
 .result {
     outline: 1px solid;
@@ -266,6 +285,7 @@ footer {
 .options {
     outline: 1px solid;
     width: 100%;
+    padding-bottom: 63px;
 }
 .options .subtitle {
     display: block;
@@ -278,6 +298,11 @@ footer {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
+    line-height: 21px;
+    padding-bottom: 2px;
 }
 .options span {
     display: block;
@@ -288,7 +313,6 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-position: center;
     padding-top: 130px;
     background-position: bottom;
     outline: 1px solid;
@@ -312,7 +336,15 @@ footer {
     display: block;
     width: 100%;
     text-align: center;
-    padding-top: 9px;
+    margin: 0;
+    padding-top: 45px;
+}
+.subtitle_options {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
 }
 .suggestion {
     outline: 1px solid;
@@ -329,12 +361,6 @@ footer {
     background-repeat: no-repeat;
     width: 513px;
     height: 257px;
-}
-.fieldset {
-    float: left;
-    width: 256px;
-    box-sizing: border-box;
-    margin: 0;
 }
 .suggestion-item {
     float: left;
@@ -373,15 +399,14 @@ footer {
     background-repeat: no-repeat;
     margin-bottom: 44px;
     margin-left: 10px;
-   
 }
 .stars_3 {
-    background-image: url(../img/3stars.png); 
+    background-image: url(../img/3stars.png);
     width: 65px;
     margin-left: 35px;
 }
 .stars_2 {
-    background-image: url(../img/3stars.png); 
+    background-image: url(../img/3stars.png);
     width: 40px;
     margin-left: 60px;
 }
@@ -425,10 +450,7 @@ label {
     margin-left: auto;
     margin-right: auto;
 }
-.available_bottom {
-    margin-top: 30px;
-    margin-bottom: 0;
-}
+.available_bottom {}
 .bottom_sprite {
     padding-left: 45px;
     position: absolute;
@@ -455,14 +477,133 @@ label {
     background-position: 3px -65px;
 }
 .fieldset {
+    float: left;
+    width: 225px;
+    box-sizing: border-box;
+    margin: 0;
+    display: inline-block;
     margin-top: 30px;
+    padding: 0;
+}
+.fieldset input {
+    display: inline-block;
+}
+.fieldset label {
+    display: inline-block;
 }
 .fieldset legend {
     font-weight: bold;
     font-size: 16px;
 }
-.fieldset .pool {
+.fieldset .input_label {
     outline: 1px solid;
+    margin-top: 27px;
+}
+.filter_range {
+    margin-top: 30px;
+    float: right;
+    outline: 1px solid;
+    width: 225px;
+    text-transform: uppercase;
+    background-color: #2C3D46;
+}
+.filter_range_title {
+    font-weight: 600;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    margin-left: 5px;
+}
+.price_controls {
+    height: 33px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    font-size: 0;
+    position: relative;
+}
+.price_controls::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+.price_controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.price_controls .min_price,
+.price_controls .max_price {
+    padding-left: 39px;
+    color: #ffffff;
+}
+.range_controls {
+    margin-bottom: 32px;
+    position: relative;
+}
+.range_controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0, 3);
+}
+.range_controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+.range_toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0, 2);
+    cursor: pointer;
+}
+.range_toggle:hover {
+    background: #1c4f80;
+}
+.range_toggle_min {
+    left: 0;
+}
+.range_toggle_max {
+    left: 80%;
+}
+.btn_transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+.btn_transparent:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+.price_controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
 }
 .detailed {
     font-weight: bold;
@@ -500,22 +641,19 @@ label {
     padding-top: 20px;
     width: auto;
     padding-bottom: 30px;
-    
 }
 .result .subtitle {
-    outline: 1px solid; 
+    outline: 1px solid;
     float: left;
     display: inline-block;
     width: 120px;
     margin: 0;
     margin-right: 45px;
-    
 }
 .together {
     outline: 1px solid;
     display: inline-block;
     padding-top: 15px;
-    
 }
 .sorting {
     outline: 1px solid;
@@ -526,7 +664,6 @@ label {
     display: inline-block;
     font-size: 12px;
     margin-right: 3px;
-    
 }
 .sorting a {
     outline: 1px solid;
@@ -537,14 +674,23 @@ label {
     outline: 1px solid;
     display: inline-block;
     widows: 50px;
-    height: 50px;
     float: right;
+    margin-left: 125px;
 }
 .choice .up {
     outline: 1px solid;
     display: inline-block;
-    background-color: #CCCCCC;
     background-image: url(../img/up.png);
-    widows: 25px;
-    height: 25px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+}
+.choice .down {
+    outline: 1px solid;
+    display: inline-block;
+    background-image: url(../img/down.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
 }
