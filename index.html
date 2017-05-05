@@ -43,10 +43,10 @@
 
             <!-- небольшое описание -->
 
-            <section class="info">
+            <section class="info_index">
 
-                <h1 class="headline">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
-                <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+                <h1 class="headline">СЕДОНА — небольшой городок в АРИЗОНЕ,<br> зАСЛУЖИвающий большего!</h1>
+                <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
             </section>
 
@@ -108,13 +108,13 @@
                     <p>все достопримеча-<br>тельности находятся очень близко</p>
                 </div>
 
-                <div class="options">
+                <div class="options options_bottom">
                     <h2 class="subtitle">красивая<br> дорога</h2>
                     <span>— №4 —</span>
                     <p>ехать в седону из<br> лас-вегаса совсем<br> не скучно</p>
                 </div>
 
-                <div class="options">
+                <div class="options options_bottom">
                     <h2 class="subtitle">мало<br> туристов</h2>
                     <span>— №5 —</span>
                     <p>большинство едет в<br> гранд-каньон и<br></b> толпится там</p>
@@ -125,53 +125,61 @@
 
             <!-- итог -->
 
-            <section class="info">
-                <div>
-                    <h2 class="headline">заинтересовались?</h2>
-                    <p>укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <section class="info_interest">
+
+                <h2 class="headline">заинтересовались?</h2>
+                <p>укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
 
-                    <div class="search">
+                <div class="search">
 
-                        <a class="search-hotel" href="#">поиск гостиницы в седоне</a>
+                    <a class="search-hotel" href="#">поиск гостиницы в седоне</a>
 
-                        <form class=".search-form" action="#" method="post">
+                    <form class="search-form" action="#" method="post">
 
-                            <label for="arrival-date">дата заезда</label>
+                        <div class="check-in_check-out">
+                            <label for="arrival-date">дата заезда:</label>
                             <input type="text" name="arrival" id="arrival-date">
+                        </div>
 
-                            <label for="departure-date">дата выезда</label>
+                        <div class="check-in_check-out">
+                            <label for="departure-date">дата выезда:</label>
                             <input type="text" name="departure" id="departure-date">
+                        </div>
 
-                            <label for="adults">взрослые</label>
+                        <div class="check-in_check-out">
+                            <label for="adults">взрослые:</label>
                             <input type="number" name="adults" id="adults">
 
-                            <label for="children">дети</label>
+                            <label for="children">дети:</label>
                             <input type="number" name="children" id="children">
+                        </div>
+                        <input class="submit" type="submit" value="найти">
 
-                            <input type="submit" value="найти">
-
-                        </form>
+                    </form>
 
 
-                    </div>
                 </div>
+
             </section>
             <div class="map">
-                <img src="img/map.jpg" alt="map">
+                <!-- <img src="img/map.jpg" alt="map">-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785778.3383133466!2d-112.37408983551009!3d34.778175628037474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da124e58d37b5%3A0x503ba28e75e1c65f!2z0KHQtdC00L7QvdCwINCg0YPQtiDQpdC-0YLQtdC7ICYg0KHQv9Cw!5e0!3m2!1sru!2sru!4v1493980683685" width="768" height="590" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
 
         </main>
 
-        <footer class="clearfix">
-
-            <div class="bottom">#visitsedona</div>
+        <footer class="clearfix footer_index">
 
             <div class="bottom">
-                <div class="bottom_sprite">
-                    <a href="" class="sprite twitter"></a>
-                    <a href="" class="sprite facebook"></a>
-                    <a href="" class="sprite youtube"></a>
+                <div class="visit">#visitsedona</div>
+            </div>
+
+            <div class="bottom">
+                <div class="bottom_social">
+                    <a href="" class="social twitter"></a>
+                    <a href="" class="social facebook"></a>
+                    <a href="" class="social youtube"></a>
                 </div>
             </div>
 

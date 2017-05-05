@@ -22,6 +22,7 @@ html {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
     /** background-image: url(../img/sedona-index-768.jpg);**/
 }
 
@@ -147,33 +148,34 @@ img {
 
 
 }
-.info {
+.reasons {
+    display: inline-block;
     outline: 1px solid;
-    display: block;
-    width: 100;
-    padding-top: 55px;
-    clear: both;
-    padding-bottom: 55px;
-}
-.info .headline {
-    width: 500px;
-    outline: 1px solid;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
-    margin-bottom: 30px;
-    font-weight: bold;
-    margin-top: 0;
-}
-.info p {
-    outline: 1px solid;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     font-size: 14px;
+    width: 100%;
     margin-top: 0;
     margin-bottom: 0;
+}
+.info_index .headline {
+    width: 100%;
+    outline: 1px solid;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    display: inline-block;
+    outline: 1px solid;
+}
+.info_index {
+    outline: 1px solid;
+    display: block;
+    width: auto;
+    padding: 55px 0;
+    clear: both;
+    padding-bottom: 39px;
+    padding-bottom: 55px;
 }
 .townlet {
     display: block;
@@ -206,6 +208,7 @@ img {
     float: left;
     box-sizing: content-box;
     color: white;
+    padding-top: 30px;
 }
 .info-side span {
     display: block;
@@ -236,11 +239,18 @@ img {
 .search {
     outline: 1px solid;
     width: 570px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    content: "#";
+    bottom: -152px;
+    left: 100px;
+    background-color: white;
 }
 .search-form {
-    /**display: none;**/
+    padding-top: 65px;
+    padding-bottom: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
+    display: block;
 }
 .search a {
     outline: 1px solid;
@@ -248,26 +258,34 @@ img {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    padding-top: 35px;
+    padding-top: 30px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    padding-bottom: 28px;
+    background-color: #766357;
+    color: white;
 }
-footer {
+.check-in_check-out {
+    width: auto;
+    display: inline-block;
     outline: 1px solid;
-    width: 100%;
-    display: block;
 }
-.bottom {
-    outline: 1px solid;
-    width: 256px;
-    float: left;
-    display: block;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.check-in_check-out label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
 }
-.bottom a {
-    outline: 1px solid;
+.check-in_check-out input {
+    display: inline-block;
+}
+.check-in_check-out .submit {
+    width: auto;
+    font-size: 21px;
+    line-height: 26px;
+    color: white;
+    background-color: #81B3D2;
 }
 .important {
     outline: 1px solid;
@@ -285,12 +303,14 @@ footer {
 .options {
     outline: 1px solid;
     width: 100%;
-    padding-bottom: 63px;
+    padding-bottom: 60px;
 }
 .options .subtitle {
     display: block;
     width: 100%;
     text-align: center;
+    line-height: 1;
+    margin: 0;
 }
 .options p {
     display: block;
@@ -320,6 +340,13 @@ footer {
     content: "";
     width: 100%;
 }
+.options_bottom {
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+.options_bottom span {
+    margin-top: 25px;
+}
 .house::before {
     background-image: url(../img/house.png);
 }
@@ -331,13 +358,6 @@ footer {
 }
 .available_bottom .options::before {
     display: none;
-}
-.subtitle {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding-top: 45px;
 }
 .subtitle_options {
     display: block;
@@ -435,46 +455,80 @@ footer {
     padding-top: 4px;
     text-decoration: none;
 }
+.info_interest {
+    width: auto;
+    display: block;
+    padding-top: 57px;
+    position: relative;
+    padding-bottom: 130px;
+}
+.info_interest .headline {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    line-height: 21px;
+}
+.info_interest p {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+    line-height: 2;
+}
 label {
     display: block;
 }
 .academy {
-    display: block;
-    width: 196px;
+    display: inline-block;
+    width: 100%;
     height: 38px;
-    outline: 1px solid;
-    /** background-repeat: no-repeat;**/
-    
     background-image: url(../img/logo_bottom.png);
     background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
+    background-position: center;
+    padding-top: 10px;
 }
-.available_bottom {}
-.bottom_sprite {
-    padding-left: 45px;
+footer {
+    outline: 1px solid;
+    width: auto;
+    display: block;
+}
+.footer_index {
+    content: "#";
     position: absolute;
+    bottom: 0;
+    background: rgba(249, 251, 246, 0.7)
 }
-.sprite {
-    background: #81B3D2 url(../img/sprite.png) no-repeat;
+.bottom {
+    width: 256px;
+    float: left;
+    display: block;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.bottom_social {
+    width: 100%;
     display: inline-block;
+    text-align: center;
+}
+.social {
     width: 46px;
     height: 48px;
-    vertical-align: middle;
-    position: relative;
-    margin: 3px;
-}
-.facebook {
-    background-size: 35px;
-    background-position: 10px 7px;
+    display: inline-block;
+    background-position: center;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 .twitter {
-    background-size: 40px;
-    background-position: 5px -30px;
+    background-image: url(../img/twitter.jpg);
+}
+.facebook {
+    background-image: url(../img/facebook.jpg);
 }
 .youtube {
-    background-size: 40px;
-    background-position: 3px -65px;
+    background-image: url(../img/youtube.jpg);
 }
 .fieldset {
     float: left;
@@ -484,6 +538,7 @@ label {
     display: inline-block;
     margin-top: 30px;
     padding: 0;
+    border: none;
 }
 .fieldset input {
     display: inline-block;
@@ -529,9 +584,6 @@ label {
     width: 2px;
     height: 22px;
     background: #ffffff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% -50%);
 }
 .price_controls label {
     display: inline-block;
@@ -634,6 +686,8 @@ label {
     font-weight: bold;
     text-align: center;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 .result {
     padding: 0;
@@ -693,4 +747,13 @@ label {
     width: 10px;
     height: 10px;
     margin-left: 10px;
+}
+.reasons {
+    display: inline-block;
+    outline: 1px solid;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 0;
 }
