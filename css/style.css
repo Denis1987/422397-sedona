@@ -241,21 +241,17 @@ img {
     width: 570px;
     position: absolute;
     content: "#";
-    bottom: -152px;
-    left: 100px;
+        left: 100px;
     background-color: white;
+    /**display: none;**/
 }
 .search-form {
-    padding-top: 65px;
-    padding-bottom: 55px;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 55px;
     display: block;
 }
-.search a {
+.search-hotel {
     outline: 1px solid;
     width: 570px;
-    display: inline-block;
     text-align: center;
     text-decoration: none;
     padding-top: 30px;
@@ -265,11 +261,17 @@ img {
     padding-bottom: 28px;
     background-color: #766357;
     color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40px;
 }
 .check-in_check-out {
     width: auto;
     display: inline-block;
-    outline: 1px solid;
+    margin-bottom: 29px;
+    position: relative;
+    /**outline: 1px solid;**/
 }
 .check-in_check-out label {
     display: inline-block;
@@ -277,8 +279,22 @@ img {
     line-height: 26px;
     font-weight: bold;
 }
+.check-in {
+    margin-right: 20px;
+}
+.check-out {
+    margin-right: 17px;
+}
 .check-in_check-out input {
     display: inline-block;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: 0;
+    width: 326px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-left: 20px;
 }
 .check-in_check-out .submit {
     width: auto;
@@ -286,6 +302,137 @@ img {
     line-height: 26px;
     color: white;
     background-color: #81B3D2;
+}
+.check-icon {
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-color: #f2f2f2;
+    content: "";
+    vertical-align: bottom;
+    background-image: url(../img/calendar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
+.button_plus_adults {
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-color: #f2f2f2;
+    content: "";
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border: 0;
+    background-image: url(../img/plus.png);
+    top: 1px;
+    right: 235px;
+}
+.button_minus_adults {
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-color: #f2f2f2;
+    content: "";
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border: 0;
+    background-image: url(../img/minus.png);
+    top: 1px;
+    left: 113px;
+}
+.button_plus_children {
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-color: #f2f2f2;
+    content: "";
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border: 0;
+    background-image: url(../img/plus.png);
+    top: 1px;
+    right: 1px;
+}
+.button_minus_children {
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-color: #f2f2f2;
+    content: "";
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border: 0;
+    background-image: url(../img/minus.png);
+    top: 1px;
+    right: 76px;
+}
+.adults_children {
+    display: inline-block;
+    height: 38px;
+    position: relative;
+}
+.adults .children {
+    vertical-align: bottom;
+    display: inline-block;
+}
+.adults label {
+    margin-right: 36px;
+}
+.children label {
+    margin-right: 30px;
+    margin-right: 25px;
+}
+.adults label,
+.children label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.adults input,
+.children input {
+    display: inline-block;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: 0;
+    width: 38px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+.children {
+    float: right;
+    margin-left: 53px;
+}
+.adults {
+    float: left;
+}
+.search-form .submit {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: white;
+    background-color: #81b3d2;
+    border: 0;
+    margin-top: 50px;
 }
 .important {
     outline: 1px solid;
@@ -460,7 +607,6 @@ img {
     display: block;
     padding-top: 57px;
     position: relative;
-    padding-bottom: 130px;
 }
 .info_interest .headline {
     display: inline-block;
