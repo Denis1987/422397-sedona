@@ -243,7 +243,13 @@ img {
     content: "#";
         left: 100px;
     background-color: white;
-    /**display: none;**/
+   
+}
+.modal-content {
+    display: none;
+}
+.modal-content-show {
+    display: block;
 }
 .search-form {
     padding: 55px;
@@ -296,6 +302,9 @@ img {
     font-weight: bold;
     padding-left: 20px;
 }
+.check-in_check-out input:hover {
+    background-color: #ebebeb;
+}
 .check-in_check-out .submit {
     width: auto;
     font-size: 21px;
@@ -307,8 +316,7 @@ img {
     width: 37px;
     height: 37px;
     display: inline-block;
-    background-color: #f2f2f2;
-    content: "";
+       content: "";
     vertical-align: bottom;
     background-image: url(../img/calendar.png);
     background-position: center;
@@ -319,6 +327,10 @@ img {
     margin-bottom: 1px;
     margin-right: 1px;
 }
+.pool_checkbox input[type="checkbox"] {
+    display: none;
+}
+
 .button_plus_adults {
     width: 37px;
     height: 37px;
@@ -414,6 +426,7 @@ img {
     font-weight: bold;
     padding-left: 38px;
     padding-right: 38px;
+    text-align: center;
 }
 .children {
     float: right;
@@ -433,6 +446,7 @@ img {
     background-color: #81b3d2;
     border: 0;
     margin-top: 50px;
+    text-transform: uppercase;
 }
 .important {
     outline: 1px solid;
@@ -688,6 +702,7 @@ footer {
 }
 .fieldset input {
     display: inline-block;
+    
 }
 .fieldset label {
     display: inline-block;

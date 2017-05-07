@@ -132,32 +132,34 @@
 
                 <a class="search-hotel" href="#">поиск гостиницы в седоне</a>
 
-                <div class="search">
+                <div class="search modal-content">
 
 
 
                     <form class="search-form" action="#" method="post">
 
                         <div class="check-in_check-out">
-                            <label class="check-in" for="arrival-date">дата заезда:<div class="check-icon"></div></label>
+                            <label class="check-in" for="arrival-date">дата заезда:</label>
+                            <div class="check-icon"></div>
                             <input type="text" name="arrival" id="arrival-date">
                         </div>
 
                         <div class="check-in_check-out">
-                            <label class="check-out" for="departure-date">дата выезда:<div class="check-icon"></div></label>
+                            <label class="check-out" for="departure-date">дата выезда:</label>
+                            <div class="check-icon"></div>
                             <input type="text" name="departure" id="departure-date">
                         </div>
 
                         <div class="adults_children">
-                        <div class="adults">
-                            <label for="adults">взрослые:<button class="button_plus_adults"></button><button class="button_minus_adults"></button></label>
-                            <input type="number" name="adults" id="adults">
-                        </div>
+                            <div class="adults">
+                                <label for="adults">взрослые:<button class="button_plus_adults"></button><button class="button_minus_adults"></button></label>
+                                <input type="text" name="adults" id="adults">
+                            </div>
 
-                        <div class="children">
-                            <label for="children">дети:<button class="button_plus_children"></button><button class="button_minus_children"></button></label>
-                            <input type="number" name="children" id="children">
-                        </div>
+                            <div class="children">
+                                <label for="children">дети:<button class="button_plus_children"></button><button class="button_minus_children"></button></label>
+                                <input type="text" name="children" id="children">
+                            </div>
                         </div>
                         <input class="submit clearfix" type="submit" value="найти">
 
@@ -197,7 +199,23 @@
         </footer>
 
     </section>
+    <script>
+        var link = document.querySelector(".search-hotel")
+        var popup = document.querySelector(".modal-content");
+        var close = document.querySelector(".search-hotel");
 
+        link.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-content-show");
+        });
+
+        close.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-content");
+        });
+       
+
+    </script>
 </body>
 
 </html>
