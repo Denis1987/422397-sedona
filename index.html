@@ -15,8 +15,8 @@
 
         <!-- Шапка сайта -->
 
-        <header class="main-header">
-            <nav class="top-menu">
+        <header class="main_header">
+            <nav class="top_menu">
                 <ul>
                     <li><a href="#">информация</a></li>
                     <li><a href="#">фото и видео</a></li>
@@ -53,10 +53,10 @@
             <!-- городишко -->
 
             <section class="townlet clearfix">
-                <div class="info-side">
+                <div class="info_side">
                     <h2 class="subtitle">настоящий<br> городок</h2>
                     <span>— №1 —</span>
-                    <p>седона - не аттракцион<br> для туристов, там течёт<br> своя жизнь</p>
+                    <p>седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <div class="townlet_foto">
                 </div>
@@ -90,10 +90,10 @@
                 <div class="bridge_foto">
 
                 </div>
-                <div class="info-side">
+                <div class="info_side">
                     <h2 class="subtitle">там есть<br> мост дьявола</h2>
                     <span>— №2 —</span>
-                    <p>да, по нему можно<br> пройти! если вы конечно<br> осмелитесь</p>
+                    <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
                 </div>
             </section>
 
@@ -130,24 +130,24 @@
                 <h2 class="headline">заинтересовались?</h2>
                 <p>укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
-                <a class="search-hotel" href="#">поиск гостиницы в седоне</a>
+                <a class="search_hotel" href="#">поиск гостиницы в седоне</a>
 
-                <div class="search modal-content">
+                <div class="search modal_content">
 
 
 
-                    <form class="search-form" action="#" method="post">
+                    <form class="search_form" action="#" method="post">
 
-                        <div class="check-in_check-out">
-                            <label class="check-in" for="arrival-date">дата заезда:</label>
-                            <div class="check-icon"></div>
-                            <input type="text" name="arrival" id="arrival-date">
+                        <div class="check_in_check_out">
+                            <label class="check_in" for="arrival_date">дата заезда:</label>
+                            <div class="check_icon"></div>
+                            <input type="text" name="arrival" id="arrival_date">
                         </div>
 
-                        <div class="check-in_check-out">
-                            <label class="check-out" for="departure-date">дата выезда:</label>
-                            <div class="check-icon"></div>
-                            <input type="text" name="departure" id="departure-date">
+                        <div class="check_in_check_out">
+                            <label class="check_out" for="departure_date">дата выезда:</label>
+                            <div class="check_icon"></div>
+                            <input type="text" name="departure" id="departure_date">
                         </div>
 
                         <div class="adults_children">
@@ -170,7 +170,6 @@
 
             </section>
             <div class="map">
-                <!-- <img src="img/map.jpg" alt="map">-->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785778.3383133466!2d-112.37408983551009!3d34.778175628037474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da124e58d37b5%3A0x503ba28e75e1c65f!2z0KHQtdC00L7QvdCwINCg0YPQtiDQpdC-0YLQtdC7ICYg0KHQv9Cw!5e0!3m2!1sru!2sru!4v1493980683685" width="768" height="590" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
 
@@ -200,20 +199,13 @@
 
     </section>
     <script>
-        var link = document.querySelector(".search-hotel")
-        var popup = document.querySelector(".modal-content");
-        var close = document.querySelector(".search-hotel");
+        var link = document.querySelector(".search_hotel")
+        var popup = document.querySelector(".modal_content");
 
         link.addEventListener("click", function(evt) {
             evt.preventDefault();
-            popup.classList.add("modal-content-show");
+            popup.classList.toggle("modal_content_show");
         });
-
-        close.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-content");
-        });
-       
 
     </script>
 </body>

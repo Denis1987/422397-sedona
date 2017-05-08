@@ -15,8 +15,8 @@
 
         <!-- Шапка сайта -->
 
-        <header class="main-header">
-            <nav class="top-menu">
+        <header class="main_header">
+            <nav class="top_menu">
                 <ul>
                     <li><a href="#">информация</a></li>
                     <li><a href="#">фото и видео</a></li>
@@ -24,7 +24,7 @@
                         <a href="index.html"><img src="img/logo_border.png" alt="logo"></a>
                     </li>
                     <li><a href="#">карта штата</a></li>
-                    <li><a href="#">гостиницы</a></li>
+                    <li><a class="top_menu_index" href="#">гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,67 +36,69 @@
 
             <section class="important">
 
-                <div class="form">
+
+                <form class="clearfix " action="#" method="post">
+
+                    <fieldset class="fieldset">
+
+                        <legend>инфраструктура:</legend>
+
+                        <div class="input_label">
+                            <input type="checkbox" name="pool" id="pool">
+                            <label for="pool">бассейн</label>
+                        </div>
+
+                        <div class="input_label">
+                                    <input type="checkbox" name="parking" id="parking">
+                            <label for="parking">парковка</label>
+                        </div>
+
+                        <div class="input_label">
+                            <input type="checkbox" name="wi-fi" id="wi-fi">
+                            <label for="wi-fi"> wi-fi</label>
+                    </fieldset>
 
 
+                    <fieldset class="fieldset second">
 
+                        <legend>тип жилья:</legend>
 
-                    <form class="clearfix " action="#" method="post">
+                        <div class="input_label">
+                            <input type="checkbox" name="type1" id="type1">
+                            <label for="type1">гостиница</label>
+                        </div>
 
-                        <fieldset class="fieldset">
+                        <div class="input_label">
+                            <input type="checkbox" name="type2" id="type2">
+                            <label for="type2">мотель</label>
+                        </div>
 
-                            <legend>инфраструктура:</legend>
-                            <div class="input_label">
-                                <input class="pool_checkbox" type="checkbox" name="pool" id="pool"><span class="checkbox-indicator"></span>
-                                <label for="pool">бассейн</label>
+                        <div class="input_label">
+                            <input type="checkbox" name="type3" id="type3">
+                            <label for="type3">апартаменты</label>
+                        </div>
+
+                    </fieldset>
+
+                    <div class="filter_range">
+                        <div class="filter_range_title">стоимость в сутки (р):</div>
+                        <div class="price_controls">
+                            <label class="min_price">от <input type="text" name="min_price" value="0"></label>
+                            <label class="max_price">до <input type="text" name="max_price" value="3000"></label>
+                        </div>
+                        <div class="range_controls">
+                            <div class="scale">
+                                <div class="bar"></div>
                             </div>
-                            <div class="input_label">
-                                <input type="checkbox" name="parking" id="parking">
-                                <label for="parking">парковка</label>
-                            </div>
-                            <div class="input_label">
-                                <input type="checkbox" name="wi-fi" id="wi-fi">
-                                <label for="infrastructure3">wi-fi</label>
-                            </div>
-                        </fieldset>
-
-
-                        <fieldset class="fieldset">
-
-                            <legend>тип жилья:</legend>
-                            <div class="input_label">
-                                <input type="checkbox" name="type" id="type1">
-                                <label for="type1">гостиница</label>
-                            </div>
-                            <div class="input_label">
-                                <input type="checkbox" name="type" id="type2">
-                                <label for="type2">мотель</label>
-                            </div>
-                            <div class="input_label">
-                                <input type="checkbox" name="type" id="type3">
-                                <label for="type3">апартаменты</label>
-                            </div>
-                        </fieldset>
-
-                        <div class="filter_range">
-                            <div class="filter_range_title">стоимость в сутки (р):</div>
-                            <div class="price_controls">
-                                <label class="min_price">от <input type="text" name="min_price" value="0"></label>
-                                <label class="max_price">до <input type="text" name="max_price" value="3000"></label>
-                            </div>
-                            <div class="range_controls">
-                                <div class="scale">
-                                    <div class="bar"></div>
-                                </div>
-                                <div class="range_toggle range_toggle_min"></div>
-                                <div class="range_toggle range_toggle_max"></div>
-                            </div>
-                            <button class="btn_transparent" type="submit">
+                            <div class="range_toggle range_toggle_min"></div>
+                            <div class="range_toggle range_toggle_max"></div>
+                        </div>
+                        <button class="btn_transparent" type="submit">
                                 показать
                             </button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
+
             </section>
 
             <!-- результат -->
@@ -128,17 +130,17 @@
 
             <!-- варианты -->
 
-            <section class="options-inner clearfix">
+            <section class="options_inner clearfix">
 
                 <div class="suggestion clearfix">
 
                     <img src="img/mountains.jpg" alt="guesthouse">
 
-                    <div class="descriptive suggestion-item clearfix">
+                    <div class="descriptive suggestion_item clearfix">
                         <h2>amara resort &#38; spa</h2>
                         <div class="paragraphs">
                             <p>гостиница</p>
-                            <p>от 3500 Р.</p>
+                            <p>от 4000 Р.</p>
                         </div>
                         <div class="details">
                             <a class="detailed" href="#">подробнее</a>
@@ -156,11 +158,11 @@
 
                     <img src="img/road.jpg" alt="Motel">
 
-                    <div class="descriptive suggestion-item clearfix">
+                    <div class="descriptive suggestion_item clearfix">
                         <h2>desert quail inn</h2>
                         <div class="paragraphs">
                             <p>мотель</p>
-                            <p>от 2000 Р.</p>
+                            <p>от 3000 Р.</p>
                         </div>
                         <div class="details">
                             <a class="detailed" href="#">подробнее</a>
@@ -179,11 +181,11 @@
 
                     <img src="img/nature.jpg" alt="apartment">
 
-                    <div class="descriptive suggestion-item clearfix">
+                    <div class="descriptive suggestion_item clearfix">
                         <h2>villas at poco diablo</h2>
                         <div class="paragraphs">
                             <p>апартаменты</p>
-                            <p>от 4000 Р.</p>
+                            <p>от 2000 Р.</p>
                         </div>
                         <div class="details">
                             <a class="detailed" href="#">подробнее</a>
