@@ -21,12 +21,13 @@
                     <li><a href="#">информация</a></li>
                     <li><a href="#">фото и видео</a></li>
                     <li class="center">
-                        <a href="index.html"><img src="img/logo_border.png" alt="logo"></a>
+                        
                     </li>
                     <li><a href="#">карта штата</a></li>
-                    <li><a class="top_menu_index" href="#">гостиницы</a></li>
+                    <li><a class="top_menu_inner" href="#">гостиницы</a></li>
                 </ul>
             </nav>
+            <a class="logo" href="index.html"><img src="img/logo_border.png" alt="logo"></a>
         </header>
         <!-- основное -->
 
@@ -43,13 +44,13 @@
 
                         <legend>инфраструктура:</legend>
 
-                        <div class="input_label">
-                            <input type="checkbox" name="pool" id="pool">
+                        <div class="input_label  checked_disabled">
+                            <input type="checkbox" name="pool" id="pool" checked disabled>
                             <label for="pool">бассейн</label>
                         </div>
 
-                        <div class="input_label">
-                                    <input type="checkbox" name="parking" id="parking">
+                        <div class="input_label  disabled">
+                            <input type="checkbox" name="parking" id="parking" disabled>
                             <label for="parking">парковка</label>
                         </div>
 
@@ -63,17 +64,17 @@
 
                         <legend>тип жилья:</legend>
 
-                        <div class="input_label">
-                            <input type="checkbox" name="type1" id="type1">
+                        <div class="input_label input_label_type">
+                            <input type="checkbox" name="type1" id="type1" checked>
                             <label for="type1">гостиница</label>
                         </div>
 
-                        <div class="input_label">
-                            <input type="checkbox" name="type2" id="type2">
+                        <div class="input_label input_label_type">
+                            <input type="checkbox" name="type2" id="type2" checked>
                             <label for="type2">мотель</label>
                         </div>
 
-                        <div class="input_label">
+                        <div class="input_label input_label_type">
                             <input type="checkbox" name="type3" id="type3">
                             <label for="type3">апартаменты</label>
                         </div>
@@ -113,7 +114,7 @@
 
                         <span>сортировка:</span>
 
-                        <a href="#">по цене</a>
+                        <a class="first" href="#">по цене</a>
                         <a href="#">по типу</a>
                         <a href="#">по рейтингу</a>
 
@@ -150,7 +151,7 @@
 
                     <div class="rating_stars">
                         <div class="stars"></div>
-                        <span class="rating">рейтинг:8,5</span>
+                        <span class="rating">рейтинг: 8,5</span>
                     </div>
                 </div>
 
@@ -173,7 +174,7 @@
 
                     <div class="rating_stars">
                         <div class="stars stars_3"></div>
-                        <span class="rating">рейтинг:8,9</span>
+                        <span class="rating">рейтинг: 8,9</span>
                     </div>
                 </div>
 
@@ -196,7 +197,7 @@
 
                     <div class="rating_stars">
                         <div class="stars stars_2"></div>
-                        <span class="rating">рейтинг:9,2</span>
+                        <span class="rating">рейтинг: 9,2</span>
                     </div>
                 </div>
 
@@ -219,7 +220,7 @@
             </div>
 
             <div class="bottom">
-                <a href="#">
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
                     <div class="academy"></div>
                 </a>
             </div>
