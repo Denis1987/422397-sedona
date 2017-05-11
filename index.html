@@ -27,10 +27,10 @@
                     <li><a href="inner.html">гостиницы</a></li>
                 </ul>
             </nav>
-            <a class="logo" href="index.html"><img src="img/logo_border.png" alt="logo"></a>
+            <a class="logo" href="index.html"><img src="img/logo_border.png" alt="logo" width="138px" height="70px"></a>
             <div class="intro">
                 <div class="welcome">
-                    <img src="img/welcome.png" alt="welcome">
+                    <img src="img/welcome.png" alt="welcome" width="458px" height="352px">
                 </div>
                 <!-- <div class="frame">
                 </div> -->
@@ -133,7 +133,7 @@
 
 
                 <div class="search">
-                  <a class="search_hotel" href="#">поиск гостиницы в седоне</a>
+                    <a class="search_hotel" href="#">поиск гостиницы в седоне</a>
 
 
 
@@ -153,12 +153,14 @@
 
                         <div class="adults_children">
                             <div class="adults">
-                                <label for="adults">взрослые:<button class="button_plus_adults" type="button"></button><button class="button_minus_adults" type="button"></button></label>
+                                <label for="adults">взрослые:</label>
+                                <button class="button_plus_adults" type="button"></button><button class="button_minus_adults" type="button"></button>
                                 <input type="text" name="adults" id="adults" placeholder="2">
                             </div>
 
                             <div class="children">
-                                <label for="children">дети:<button class="button_plus_children" type="button"></button><button class="button_minus_children" type="button"></button></label>
+                                <label for="children">дети:</label>
+                                <button class="button_plus_children" type="button"></button><button class="button_minus_children" type="button"></button>
                                 <input type="text" name="children" id="children" placeholder="0">
                             </div>
                         </div>
@@ -171,7 +173,7 @@
 
             </section>
             <div class="map">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785778.3383133466!2d-112.37408983551009!3d34.778175628037474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da124e58d37b5%3A0x503ba28e75e1c65f!2z0KHQtdC00L7QvdCwINCg0YPQtiDQpdC-0YLQtdC7ICYg0KHQv9Cw!5e0!3m2!1sru!2sru!4v1493980683685" width="1200" height="590" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785778.3383133466!2d-112.37408983551009!3d34.778175628037474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da124e58d37b5%3A0x503ba28e75e1c65f!2z0KHQtdC00L7QvdCwINCg0YPQtiDQpdC-0YLQtdC7ICYg0KHQv9Cw!5e0!3m2!1sru!2sru!4v1493980683685" width="1200" height="590" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
 
         </main>
@@ -203,9 +205,10 @@
         var link = document.querySelector(".search_hotel")
         var popup = document.querySelector(".modal_content");
 
+        popup.classList.add("modal_content_hide");
         link.addEventListener("click", function(evt) {
             evt.preventDefault();
-            popup.classList.toggle("modal_content_show");
+            popup.classList.toggle("modal_content_hide");
         });
 
     </script>
