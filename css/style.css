@@ -1213,7 +1213,7 @@ footer
     margin-top: 29px;
 }
 
-.filter-range
+.filter_range
 {
     float: right;
 
@@ -1224,7 +1224,7 @@ footer
     color: #fff;
 }
 
-.filter-range-title
+.filter_range_title
 {
     font-size: 16px;
     font-weight: 600;
@@ -1233,7 +1233,7 @@ footer
     margin-bottom: 10px;
 }
 
-.price-controls
+.price_controls
 {
     font-size: 0;
 
@@ -1246,7 +1246,7 @@ footer
     border-radius: 2px;
 }
 
-.price-controls::after
+.price_controls::after
 {
     position: absolute;
     top: 50%;
@@ -1262,7 +1262,7 @@ footer
     background: #fff;
 }
 
-.price-controls label
+.price_controls label
 {
     font-size: 14px;
     line-height: 30px;
@@ -1273,14 +1273,14 @@ footer
     vertical-align: top;
 }
 
-.price-controls .min-price,
-.price-controls .max-price
+.price_controls .min_price,
+.price_controls .max_price
 {
     width: 85px;
     padding-left: 65px;
 }
 
-.price-controls input
+.price_controls input
 {
     font: inherit;
     line-height: 21px;
@@ -1293,21 +1293,21 @@ footer
     background: none;
 }
 
-.range-controls
+.range_controls
 {
     position: relative;
 
     margin-bottom: 32px;
 }
 
-.range-controls .scale
+.range_controls .scale
 {
     height: 2px;
 
     background: rgba(255, 255, 255, .3);
 }
 
-.range-controls .bar
+.range_controls .bar
 {
     width: 80%;
     height: 2px;
@@ -1315,7 +1315,7 @@ footer
     background: #fff;
 }
 
-.range-toggle
+.range_toggle
 {
     position: absolute;
     top: -9px;
@@ -1332,22 +1332,22 @@ footer
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
 }
 
-.range-toggle:hover
+.range_toggle:hover
 {
     background: #1c4f80;
 }
 
-.range-toggle-min
+.range_toggle_min
 {
     left: 0;
 }
 
-.range-toggle-max
+.range_toggle_max
 {
     left: 80%;
 }
 
-.btn-transparent
+.btn_transparent
 {
     font-size: 14px;
     line-height: 20px;
@@ -1367,7 +1367,7 @@ footer
     background: transparent;
 }
 
-.btn-transparent:hover
+.btn_transparent:hover
 {
     color: #000;
     background: #fff;
