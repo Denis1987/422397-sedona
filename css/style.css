@@ -410,6 +410,7 @@ img
 
     width: auto;
     margin-bottom: 27px;
+    font-size: 0;
 }
 
 .check_in_check_out label
