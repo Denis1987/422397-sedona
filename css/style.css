@@ -30,6 +30,7 @@ html
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
+    min-height: 100vh;
 
     -webkit-box-shadow: 0 15px 30px 5px #999;
     box-shadow: 0 15px 30px 5px #999;
@@ -42,10 +43,6 @@ html
     line-height: 26px;
 }
 
-h2
-{
-    font-size: 21px;
-}
 
 .main_header
 {
@@ -80,8 +77,8 @@ img
     display: inline-block;
 
     width: 20%;
-    padding-top: 18px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 16px;
 
     text-align: center;
     vertical-align: top;
@@ -111,7 +108,7 @@ img
     position: relative;
 
     display: inline-block;
-
+vertical-align: top;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -140,7 +137,8 @@ img
 {
     text-align: center;
     text-decoration: none;
-
+font-size: 14px;
+    line-height: 26px;
     color: black;
 }
 
@@ -184,11 +182,12 @@ img
 {
     position: relative;
 
-    height: 433px;
-    padding-top: 75px;
+    height: 432px;
+    padding-top: 76px;
 
     background-color: #e1f0f7;
     background-image: url(../img/background_photo.jpg);
+    background-position: 50% -56px;
 }
 
 .intro::after
@@ -218,7 +217,7 @@ img
     font-size: 14px;
 
     display: inline-block;
-
+vertical-align: middle;
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
@@ -233,7 +232,7 @@ img
 
     width: auto;
     padding: 60px 25%;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
 }
 
 .info_index .headline
@@ -241,10 +240,10 @@ img
     font-weight: bold;
 
     display: inline-block;
-
+vertical-align: middle;
     width: 100%;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     text-align: center;
 
@@ -268,7 +267,7 @@ img
 
     width: 66.66%;
     height: 255px;
-
+    background-color: #C7C49C;
     background-image: url(../img/hotel.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -302,7 +301,7 @@ img
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 400px;
-    padding-top: 30px;
+    padding-top: 31px;
     padding-right: 49px;
     padding-bottom: 57px;
     padding-left: 49px;
@@ -313,9 +312,10 @@ img
 .info_side span
 {
     display: block;
-
+font-size: 14;
+    line-height: 21px;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 24px;
 
     text-align: center;
 }
@@ -325,7 +325,7 @@ img
     font-weight: normal;
     line-height: 21px;
 
-    margin-top: 24px;
+    margin-top: 21px;
     margin-bottom: 0;
 }
 
@@ -389,7 +389,7 @@ img
     display: block;
 
     width: 568px;
-    margin-top: 41px;
+    margin-top: 47px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 31px;
@@ -407,7 +407,7 @@ img
     position: relative;
 
     display: inline-block;
-
+vertical-align: bottom;
     width: auto;
     margin-bottom: 27px;
     font-size: 0;
@@ -420,6 +420,7 @@ img
     line-height: 26px;
 
     display: inline-block;
+    vertical-align: bottom;
 }
 
 .check_in
@@ -439,7 +440,7 @@ img
     line-height: 26px;
 
     display: inline-block;
-
+vertical-align: bottom;
     width: 326px;
     height: 38px;
     padding-left: 20px;
@@ -476,7 +477,7 @@ img
     bottom: 0;
 
     display: inline-block;
-
+vertical-align: bottom;
     width: 37px;
     height: 37px;
     margin-right: 1px;
@@ -507,7 +508,7 @@ img
     right: 235px;
 
     display: inline-block;
-
+vertical-align: middle;
     width: 37px;
     height: 37px;
 
@@ -538,7 +539,7 @@ img
     left: 113px;
 
     display: inline-block;
-
+vertical-align: middle;
     width: 37px;
     height: 37px;
 
@@ -569,7 +570,7 @@ img
     right: 1px;
 
     display: inline-block;
-
+vertical-align: middle;
     width: 37px;
     height: 37px;
 
@@ -600,7 +601,7 @@ img
     right: 76px;
 
     display: inline-block;
-
+vertical-align: middle;
     width: 37px;
     height: 37px;
 
@@ -631,12 +632,6 @@ img
     display: inline-block;
 
     height: 38px;
-}
-
-.adults .children
-{
-    display: inline-block;
-
     vertical-align: bottom;
 }
 
@@ -659,6 +654,7 @@ img
     line-height: 26px;
 
     display: inline-block;
+    vertical-align: bottom;
 }
 
 .adults input,
@@ -669,6 +665,7 @@ img
     line-height: 26px;
 
     display: inline-block;
+    vertical-align: bottom;
 
     width: 38px;
     height: 38px;
@@ -701,6 +698,7 @@ img
     line-height: 26px;
 
     display: inline-block;
+    vertical-align: bottom;
 
     width: 100%;
     margin-top: 50px;
@@ -797,7 +795,7 @@ img
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 130px;
+    padding-top: 133px;
 
     content: '';
 
@@ -807,7 +805,7 @@ img
 
 .options_bottom
 {
-    padding: 45px 60px 60px;
+    padding: 46px 60px 60px;
     padding-bottom: 55px;
 }
 
@@ -842,18 +840,20 @@ img
 
     width: 100%;
     margin: 0;
-    padding-top: 33px;
+    padding-top: 29px;
 
     text-align: center;
+    font-size: 21px;
+    line-height: 21px;
 }
 
 .suggestion
 {
     display: block;
 
-    padding-top: 29px;
+    padding-top: 25px;
     padding-right: 6%;
-    padding-bottom: 31px;
+    padding-bottom: 30px;
     padding-left: 6%;
 
     border-bottom: #e5e5e5 1px solid;
@@ -865,7 +865,7 @@ img
 
     width: 66.66%;
     height: 257px;
-
+    background-color: #EBB79F;
     background-image: url(../img/bridge.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -876,7 +876,7 @@ img
 {
     display: inline-block;
     float: left;
-
+vertical-align: bottom;
     width: 300px;
 }
 
@@ -885,6 +885,7 @@ img
     float: left;
 
     margin-right: 30px;
+    margin-top: 5px;
 
     background-color: #81b3d2;
 }
@@ -893,8 +894,9 @@ img
 {
     width: 300px;
     margin: 0;
-    margin-bottom: 10px;
-
+    margin-bottom: 7px;
+font-size: 21px;
+    line-height: 26px;
     cursor: pointer;
 }
 
@@ -916,6 +918,8 @@ img
     padding-left: 15px;
 
     background-color: #f2f2f2;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .rating_stars
@@ -925,15 +929,17 @@ img
     width: 120px;
 
     text-align: right;
+    padding-top: 4px;
 }
 
 .stars
 {
     display: inline-block;
-
+vertical-align: bottom;
     width: 90px;
     height: 20px;
     margin-bottom: 44px;
+    margin-bottom: 42px;
 
     background-image: url(../img/4stars.png);
     background-repeat: no-repeat;
@@ -954,16 +960,16 @@ img
     font-size: 0;
 
     display: inline-block;
-
+vertical-align: bottom;
     width: 300px;
 }
 
 .paragraphs p
 {
     font-size: 14px;
-
+line-height: 21px;
     display: inline-block;
-
+vertical-align: bottom;
     width: 110px;
     margin: 0;
 }
@@ -975,14 +981,15 @@ img
 
 .details
 {
-    padding-top: 12px;
+    padding-top: 11px;
 }
 
 .details a
 {
     margin-right: 1px;
-    padding: 4px 16px 5px 17px;
-
+    padding: 3px 16px 3px 17px;
+font-size: 14;
+    line-height: 21px;
     text-decoration: none;
 }
 
@@ -993,16 +1000,16 @@ img
     display: block;
 
     width: auto;
-    padding-top: 57px;
+    padding-top: 53px;
 }
 
 .info_interest .headline
 {
     font-size: 30px;
-    line-height: 21px;
+    line-height: 30px;
 
     display: inline-block;
-
+vertical-align: bottom;
     width: 100%;
     margin: 0;
 
@@ -1011,13 +1018,13 @@ img
 
 .info_interest p
 {
-    line-height: 2;
-
+    line-height: 24px;
+font-size: 14px;
     display: inline-block;
-
+vertical-align: bottom;
     width: 100%;
     margin: 0;
-    margin-top: 25px;
+    margin-top: 27px;
 
     text-align: center;
 }
@@ -1030,14 +1037,15 @@ label
 .academy
 {
     display: inline-block;
-
-    width: 100%;
+vertical-align: bottom;
+    width: 200px;
     height: 38px;
     padding-top: 10px;
 
     background-image: url(../img/logo_bottom.png);
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 .academy:hover
@@ -1080,7 +1088,7 @@ footer
 .bottom_social
 {
     display: inline-block;
-
+vertical-align: bottom;
     width: 100%;
 
     text-align: center;
@@ -1091,7 +1099,7 @@ footer
     position: relative;
 
     display: inline-block;
-
+vertical-align: bottom;
     width: 46px;
     height: 48px;
     margin-right: 1px;
@@ -1179,7 +1187,7 @@ footer
 {
     display: inline-block;
     float: left;
-
+vertical-align: bottom;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 255px;
@@ -1192,26 +1200,30 @@ footer
 .fieldset input
 {
     display: inline-block;
+    vertical-align: bottom;
 }
 
 .fieldset label
 {
     display: inline-block;
-
+    vertical-align: bottom;
     padding-left: 40px;
 
     cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .fieldset legend
 {
     font-size: 16px;
+    line-height: 21px;
     font-weight: bold;
 }
 
 .fieldset .input_label
 {
-    margin-top: 29px;
+    margin-top: 25px;
 }
 
 .filter_range
@@ -1433,8 +1445,8 @@ input[type='checkbox']
 
     display: block;
 
-    margin: 0 auto;
-    padding: 5px 30px;
+    
+    padding: 6px 30.5px;
 
     cursor: pointer;
     text-transform: uppercase;
@@ -1471,7 +1483,7 @@ input[type='checkbox']
     font-weight: bold;
 
     display: inline-block;
-
+    vertical-align: bottom;
     padding-right: 16px;
     padding-left: 16px;
 
@@ -1495,7 +1507,7 @@ input[type='checkbox']
     font-weight: bold;
 
     display: inline-block;
-
+    vertical-align: bottom;
     margin-left: 2px;
     padding-right: 16px;
     padding-left: 16px;
@@ -1564,7 +1576,7 @@ input[type='checkbox']
 {
     display: inline-block;
     float: left;
-
+    vertical-align: bottom;
     margin-top: 5px;
 }
 
@@ -1572,7 +1584,7 @@ input[type='checkbox']
 {
     display: inline-block;
     float: left;
-
+    vertical-align: bottom;
     width: 400px;
 }
 
@@ -1582,7 +1594,7 @@ input[type='checkbox']
     line-height: 18px;
 
     display: inline-block;
-
+    vertical-align: bottom;
     vertical-align: top;
 
     color: #000;
@@ -1640,14 +1652,14 @@ input[type='checkbox']
 {
     display: inline-block;
     float: right;
-
+    vertical-align: bottom;
     margin-top: 5px;
 }
 
 .choice .up
 {
     display: inline-block;
-
+    vertical-align: bottom;
     width: 10px;
     height: 10px;
 
@@ -1677,16 +1689,16 @@ input[type='checkbox']
 
     cursor: pointer;
 
-    background-image: url(../img/down_%D1%81lick.png);
+    background-image: url(../img/down_click.png);
     background-repeat: no-repeat;
 }
 
 .reasons
 {
     font-size: 14px;
-
+line-height: 26px;
     display: inline-block;
-
+    vertical-align: bottom;
     width: 100%;
     margin-top: 12px;
     margin-bottom: 0;
@@ -1698,13 +1710,14 @@ input[type='checkbox']
 {
     width: 1200px;
     height: 590px;
-
+    background-color: #81B3D2;
     background-image: url(../img/map_sedona.jpg);
     background-position: center;
 }
 
-button:focus
-{
-    outline: none;
+.bottom_academy a {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
 }
-
