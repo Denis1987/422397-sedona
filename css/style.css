@@ -354,6 +354,8 @@ html
 
 .available .options
 {
+    position: relative;
+
     float: left;
 
     width: 33.33%;
@@ -550,19 +552,21 @@ html
     margin-right: 1px;
     margin-bottom: 1px;
 
-    background-image: url(../img/calendar.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -256px -12px;
 }
 
 .check_icon:hover
 {
-    background-image: url(../img/calendar_hover.png);
+    background-image: url(../img/sprite.png);
+    background-position: -378px -12px;
 }
 
 .check_icon:active
 {
-    background-image: url(../img/calendar_click.png);
+    background-image: url(../img/sprite.png);
+    background-position: -317px -12px;
 }
 
 .button_plus_adults
@@ -578,19 +582,21 @@ html
 
     border: 0;
     background-color: #f2f2f2;
-    background-image: url(../img/plus.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -1916px -6px;
 }
 
 .button_plus_adults:hover
 {
-    background-image: url(../img/plus_hover.png);
+    background-image: url(../img/sprite.png);
+    background-position: -2018px -6px;
 }
 
 .button_plus_adults:active
 {
-    background-image: url(../img/plus_click.png);
+    background-image: url(../img/sprite.png);
+    background-position: -1967px -6px;
 }
 
 .button_minus_adults
@@ -605,24 +611,26 @@ html
     height: 37px;
 
     content: '';
-    vertical-align: middle;
     vertical-align: bottom;
 
     border: 0;
     background-color: #f2f2f2;
-    background-image: url(../img/minus.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-position: -1762px -2px;
 }
 
 .button_minus_adults:hover
 {
-    background-image: url(../img/minus_hover.png);
+    background-image: url(../img/sprite.png);
+    background-position: -1866px -2px;
 }
 
 .button_minus_adults:active
 {
-    background-image: url(../img/minus_click.png);
+    background-image: url(../img/sprite.png);
+    background-position: -1814px -2px;
 }
 
 .button_plus_children
@@ -637,24 +645,26 @@ html
     height: 37px;
 
     content: '';
-    vertical-align: middle;
     vertical-align: bottom;
 
     border: 0;
     background-color: #f2f2f2;
-    background-image: url(../img/plus.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-position: -1916px -6px;
 }
 
 .button_plus_children:hover
 {
-    background-image: url(../img/plus_hover.png);
+    background-image: url(../img/sprite.png);
+    background-position: -2018px -6px;
 }
 
 .button_plus_children:active
 {
-    background-image: url(../img/plus_click.png);
+    background-image: url(../img/sprite.png);
+    background-position: -1967px -6px;
 }
 
 .button_minus_children
@@ -669,24 +679,26 @@ html
     height: 37px;
 
     content: '';
-    vertical-align: middle;
     vertical-align: bottom;
 
     border: 0;
     background-color: #f2f2f2;
-    background-image: url(../img/minus.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-position: -1762px -2px;
 }
 
 .button_minus_children:hover
 {
-    background-image: url(../img/minus_hover.png);
+    background-image: url(../img/sprite.png);
+    background-position: -1866px -2px;
 }
 
 .button_minus_children:active
 {
-    background-image: url(../img/minus_click.png);
+    background-image: url(../img/sprite.png);
+    background-position: -1814px -2px;
 }
 
 .adults_children
@@ -859,12 +871,12 @@ html
 
 .options::before
 {
+    position: absolute;
+
     display: block;
 
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 133px;
+    width: 72px;
+    height: 76px;
 
     content: '';
 
@@ -885,22 +897,47 @@ html
 
 .house::before
 {
-    background-image: url(../img/house.png);
+    top: -72px;
+    left: 162px;
+
+    width: 75px;
+    height: 72px;
+
+    background-image: url(../img/sprite.png);
+    background-position: -955px -20px;
 }
 
 .burger::before
 {
-    background-image: url(../img/burger.png);
+    top: -71px;
+    left: 163px;
+
+    width: 74px;
+    height: 70px;
+
+    background-image: url(../img/sprite.png);
+    background-position: -149px -20px;
 }
 
 .present::before
 {
-    background-image: url(../img/present.png);
+    top: -76px;
+    left: 168px;
+
+    width: 64px;
+    height: 76px;
+
+    background-image: url(../img/sprite.png);
+    background-position: -2084px -20px;
 }
 
 .available_bottom .options::before
 {
     display: none;
+}
+.available_first
+{
+    padding-top: 134px;
 }
 
 .subtitle_options
@@ -1018,8 +1055,9 @@ html
 
     vertical-align: bottom;
 
-    background-image: url(../img/4stars.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
+    background-position: -20px -20px;
 }
 
 .stars_3
@@ -1084,7 +1122,7 @@ html
     display: block;
 
     width: auto;
-    padding-top: 53px;
+    padding-top: 52px;
 }
 
 .info_interest .headline
@@ -1128,19 +1166,21 @@ html
 
     vertical-align: bottom;
 
-    background-image: url(../img/logo_bottom.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -1068px -16px;
 }
 
 .academy:hover
 {
-    background-image: url(../img/logo_bottom_hover.png);
+    background-image: url(../img/sprite.png);
+    background-position: -1538px -16px;
 }
 
 .academy:active
 {
-    background-image: url(../img/logo_bottom_active.png);
+    background-image: url(../img/sprite.png);
+    background-position: -1303px -16px;
 }
 
 .everything footer
@@ -1220,7 +1260,8 @@ html
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-    background-image: url(../img/twitter.png);
+    background-image: url(../img/sprite.png);
+    background-position: -2188px -20px;
 }
 
 .twitter:active:after
@@ -1241,7 +1282,8 @@ html
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-    background-image: url(../img/facebook.png);
+    background-image: url(../img/sprite.png);
+    background-position: -905px -20px;
 }
 
 .facebook:active:after
@@ -1262,7 +1304,8 @@ html
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-    background-image: url(../img/youtube.png);
+    background-image: url(../img/sprite.png);
+    background-position: -2398px -20px;
 }
 
 .youtube:active:after
@@ -1498,24 +1541,26 @@ html
 
     content: '';
 
-    background-image: url(../img/checkbox.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-position: left;
+    background-position: -446px -20px;
 }
 
 .input_label input:checked + label::before
 {
-    background-image: url(../img/cheked.png);
+    background-image: url(../img/sprite.png);
+    background-position: -574px -20px;
 }
 
 .input_label input:disabled + label::before
 {
-    background-image: url(../img/disabled.png);
+    background-image: url(../img/sprite.png);
+    background-position: -640px -20px;
 }
 .input_label input:checked:disabled + label::before
 {
-    background-image: url(../img/checked_disabled.png);
+    background-image: url(../img/sprite.png);
+    background-position: -508px -20px;
 }
 .btn_transparent
 {
@@ -1532,7 +1577,6 @@ html
     color: #fff;
     border: 2px solid #fff;
     border-radius: 2px;
-    outline: none;
     background: transparent;
 }
 
@@ -1552,7 +1596,6 @@ html
 
     color: inherit;
     border: none;
-    outline: none;
     background: none;
 }
 
@@ -1676,7 +1719,6 @@ html
 
     display: inline-block;
 
-    vertical-align: bottom;
     vertical-align: top;
 
     color: #000;
@@ -1692,6 +1734,7 @@ html
 
     margin-left: 32px;
 
+    vertical-align: bottom;
     text-decoration: none;
 
     color: #b2b2b2;
@@ -1749,18 +1792,21 @@ html
     cursor: pointer;
     vertical-align: bottom;
 
-    background-image: url(../img/up.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
+    background-position: -2245px -20px;
 }
 
 .choice .up:hover
 {
-    background-image: url(../img/up_hover.png);
+    background-image: url(../img/sprite.png);
+    background-position: -2347px -20px;
 }
 
 .choice .up:active
 {
-    background-image: url(../img/up_click.png);
+    background-image: url(../img/sprite.png);
+    background-position: -2296px -20px;
 }
 
 .choice .down
@@ -1772,9 +1818,11 @@ html
     margin-left: 10px;
 
     cursor: pointer;
+    vertical-align: bottom;
 
-    background-image: url(../img/down_click.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
+    background-position: -753px -20px;
 }
 
 .map
